@@ -1,0 +1,31 @@
+.team{
+    grid-area: team;
+     display: grid;
+     grid-template: 1fr / repeat(2, 1fr);
+     gap:100px;
+     margin: 60px auto;
+     padding: 2em 0 2em;
+     max-width: 800px;
+    
+}
+.p1, .p2{
+   text-align: center;
+ 
+    & p{
+        border: 2px solid gainsboro;
+        padding: 50px;
+        line-height: 25px;
+    }
+   & img{
+       border-radius: 50%;
+       min-width: 20px;
+       max-width: 60px;
+       margin-top: 60px;
+   }
+}
+.caption{
+   font-weight: bold;
+}
+.work{
+    font-size: 12px;
+}

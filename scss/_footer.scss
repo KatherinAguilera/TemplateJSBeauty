@@ -1,0 +1,26 @@
+/**********************FOORTER*************************/
+footer{
+    grid-area: footer;
+    background: rgba(7, 6, 6, 0.678);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px; 
+}
+.menu-foot{
+    display: flex;
+    list-style: none;
+    & li{
+    padding: 0.2em 1em;    
+    }
+
+}
+.logoFooter
+{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}

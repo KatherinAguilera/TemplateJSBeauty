@@ -1,0 +1,109 @@
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        min-height: 0;
+    }
+    .logo span {
+        font-size: 26px;
+        grid-row: 1 / 2;
+        grid-column: 1/2;
+    }
+    .header .menu {
+        opacity: 0;
+        visibility: hidden;
+        font-size: 13px;
+        &.active1 {
+            opacity: 1;
+            visibility: visible;
+            grid-row: 2/3;
+            grid-column: 1/-1;
+             animation: modeIn 1s ease-in;
+            & ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: rgba(233, 85, 131, 0.3);
+                border-radius: 20px;
+                padding: 0;
+                width: 100%;
+            }
+            & a li {
+                color: rgb(37, 37, 37);
+                border-bottom: solid 2px #e95583;
+                background: #f9f9f9;
+                &:hover {
+                    color: white;
+                    background: black;
+                }
+            }
+        }
+    }
+ 
+    .cover-center .h1,
+    .color {
+        font-size: 20px;
+    }
+    .get,
+    .btn-formulario {
+        font-size: 13px;
+    }
+    .features,
+    .team,
+    .menu-foot {
+        display: block;
+        text-align: center;
+    }
+    .brand {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        & .brand-container {
+            margin-bottom: 15px;
+        }
+    }
+    .form {
+        display: grid;
+        grid-template-columns: .3fr 1fr;
+        /* grid-gap: 10px; */
+        padding: 1em;
+        background: #f9f9f9;
+        border-radius: 12px;
+        max-width: 200px;
+        min-width: 200px;
+        & input {
+            width: 100%;
+            font-size: 12px;
+            padding: 4px 8px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            border: .5px solid rgba(148, 233, 149, 1);
+            outline: 0;
+            box-sizing: border-box;
+        }
+        & label {
+            padding: 0;
+        }
+    }
+       .btn-menu {
+           display: block;
+           grid-row: 1/2;
+           grid-column: 2/3;
+           justify-self: end;
+           & button{
+               background: black;
+               color: white;
+               padding: 4px 12px;
+               border: none;
+               cursor: pointer;
+           }
+       }
+}

@@ -1,0 +1,10 @@
+$blanco: #ffffff;
+$grisHeader: gray;
+$color-hover:rgb(26, 23, 23);
+$responsive: 100%;
+
+%flex{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}

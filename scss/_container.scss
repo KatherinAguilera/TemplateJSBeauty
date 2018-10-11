@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    background: $blanco;
+    font-family: 'Raleway',
+    sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+img{
+    max-width: $responsive;
+}
+.container{
+    display:grid;
+    grid-template-areas: 'header'
+                        'cover'
+                        'feature'
+                        'team'
+                        'pricing'
+                        'footer';
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: auto;
+
+}

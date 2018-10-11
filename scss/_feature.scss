@@ -1,0 +1,27 @@
+/************************FEATURES*********************/
+.features{
+ grid-area: feature;
+ display: grid;
+ grid-template: 1fr / repeat(3,1fr);
+ margin: 100px auto;
+ padding: 3em 0 2em;
+ max-width: 800px;
+}
+.col1, .col2, .col3{
+// grid-column: 1/2;
+text-align: center;
+padding: 0 50px;
+& .read{
+    margin-left: 5px;
+ }
+ & p{
+     margin-bottom: 50px;
+     line-height: 25px;
+ }
+}
+ .link {
+     text-decoration: none;
+     text-transform: uppercase;
+     margin-top: 30px;
+     color: rgb(99, 99, 99);
+ }
